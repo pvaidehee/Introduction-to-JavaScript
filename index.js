@@ -109,13 +109,19 @@ console.log(playRound(playerSelect, compSelect));
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
-
+function multiply(a,0.62137119){
+    return a * 0.62137119;
+}
+console.log(multiply(2,0.62137119));
 
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
-
+function multiply(a,30.48){
+    return a * 30.48;
+}
+console.log(multiply(2,30.48));
 
 
 
@@ -124,8 +130,12 @@ console.log(playRound(playerSelect, compSelect));
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
-
-
+function annoyingSong(){
+      for(let i = 0; i <= 99; i--){
+          let annoyingSong = """ + "bottle of soda on the wall" + "" "bottles of soda" + "take one down pass it around" + "" "
+          console.log(annoyingSong)
+      }
+  }
 
 
 /************************************************************** Task 7 **************************************************************/
@@ -137,7 +147,21 @@ console.log(playRound(playerSelect, compSelect));
 //60s should be D 
 //and anything below 60 should be F
   
-
+var a = promt("Enter you marks:");
+if(a>=90)
+console.log("A");
+else if (a<90 && a>=80){
+    console.log("B");
+    else if(a<80 && a>=70){
+        console.log("C")
+    }
+    else if(a<70 && a>=60){
+        console.log("D");
+    }
+    else(a<60){
+        console.log("F");
+    }
+}
   
   
 
@@ -145,7 +169,8 @@ console.log(playRound(playerSelect, compSelect));
 //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
-
+const vowels =["a", "e", "I", "o", "U"];
+for let(vowels.length);
 
 
 

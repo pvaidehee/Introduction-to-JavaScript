@@ -1,34 +1,37 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
-
-
-
+var votingAge => "18";
+console.log(votingAge);
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
-
-
-
+var nameSchool = 'Lambda School';
+nameSchool = 'Full Stalk Web';
+console.log(nameSchool);
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
-
-
-
+var a ="15.87"; //This is a string.
+var resultInt = Math.floor(a); //This outputs integer.
+console.log(resultInt)
 
 //Task d: Write a function to multiply a*b 
 
-
-
-
+function multiply(a,b){
+    return a * b;
+}
+console.log(multiply(2,7));
 
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
-
-
+//variables
+function multiply(a,7){
+    return a * 7;
+}
+console.log(multiply(2,7));
 
 
 /************************************************************** Task 3 **************************************************************/
@@ -49,9 +52,30 @@
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
-
-
-
+let dogPound = "15";
+let dogAge = "1";
+dogMonths = "0";
+if ( dogPound = 0; dogPound <= 5 && dogAge >= 1){
+    console.log("5%  of their body weight")
+}
+else if ( dogPound >= 6; dogPound <=10 && dogAge >=1){
+    console.log("4% of their body weight")
+}
+else if ( dogPound >= 11; dogPound <= 15 && dogAge>=1){
+    console.log("3% of their body weight")
+}
+else if(dogPound > 15 && dogAge>=1){
+    console.log("2%of their body weight")
+}
+else if(dogAge < 1 && dogMonths >= 2; dogMonths <= 4){
+    console.log("10% of their body weight")
+}
+else if(dogAge < 1 && dogMonths >= 4; dogMonths <= 7){
+    console.log("5% of their body weight")
+}
+else if(dogAge < 1 && dogMonths >= 7; dogMonths <= 12){
+    console.log("4% of their body weight")
+}
 
 /************************************************************** Task 4 **************************************************************/
 // Rock, Paper, Sissors
@@ -59,9 +83,27 @@
 // it should return you won or you lost based on the rules of the game (you may need to look up the rules if you have not played before)
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
+ function playComp(){
+     let choose =["rock", "paper", "scissors"];
+     return choose[Math.random() * choose.length];
+ }
+ function playRound(playerSelect, compSelect) {
+    const capitalize = word => { return word.charAt(0).toUpperCase() + word.slice(1); }
+    const winStatement = (winner, loser) => { return `You Win! ${capitalize(winner)} beats ${capitalize(loser)}`; }
+    const loseStatement = (winner, loser) => { return `You Lose! ${capitalize(winner)} beats ${capitalize(loser)}`; }
+    const winnerChoose = {'rock': 'paper', 'paper': 'scissors', 'scissors': 'rock'};
+    
+    playerSelect = playerSelection.toLowerCase();
+    
+    if(playerSelection === compSelect) return "Oh! It's a tie";
+    else if(playerSelect === winningChoice[compSelect]) return winStatement(playerSelect, compSelect);
+    else return loseStatement(compSelect, playerSelect);
+}
 
-  
-  
+const playerSelect = 'rock';
+const compSelect = compPlay();
+console.log(playRound(playerSelect, compSelect));
+
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter

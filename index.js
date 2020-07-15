@@ -1,7 +1,8 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
-var votingAge => "18";
+var votingAge = "true";
+true > 18;
 console.log(votingAge);
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
@@ -28,10 +29,11 @@ console.log(multiply(2,7));
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
 //variables
-function multiply(a,7){
-    return a * 7;
+let dogYears = 7;
+function multiply(a,dogYears){
+    return a * dogYears;
 }
-console.log(multiply(2,7));
+console.log(multiply(5,7));
 
 
 /************************************************************** Task 3 **************************************************************/
@@ -52,29 +54,27 @@ console.log(multiply(2,7));
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
-let dogPound = "15";
-let dogAge = "1";
-dogMonths = "0";
-if ( dogPound = 0; dogPound <= 5 && dogAge >= 1){
-    console.log("5%  of their body weight")
+
+if ( dogPound = 0);( dogPound <= 5 && dogAge >= 1);{
+    console.log("5%  of their body weight");
 }
-else if ( dogPound >= 6; dogPound <=10 && dogAge >=1){
-    console.log("4% of their body weight")
+else if ( dogPound >= 6);( dogPound <=10 && dogAge >=1);{
+    console.log("4% of their body weight");
 }
-else if ( dogPound >= 11; dogPound <= 15 && dogAge>=1){
-    console.log("3% of their body weight")
+else if ( dogPound >= 11);( dogPound <= 15 && dogAge>=1);{
+    console.log("3% of their body weight");
 }
 else if(dogPound > 15 && dogAge>=1){
-    console.log("2%of their body weight")
+    console.log("2%of their body weight");
 }
-else if(dogAge < 1 && dogMonths >= 2; dogMonths <= 4){
-    console.log("10% of their body weight")
+else if(dogAge < 1 && dogMonths >= 2);( dogMonths <= 4);{
+    console.log("10% of their body weight");
 }
-else if(dogAge < 1 && dogMonths >= 4; dogMonths <= 7){
-    console.log("5% of their body weight")
+else if(dogAge < 1 && dogMonths >= 4);( dogMonths <= 7);{
+    console.log("5% of their body weight");
 }
-else if(dogAge < 1 && dogMonths >= 7; dogMonths <= 12){
-    console.log("4% of their body weight")
+else if(dogAge < 1 && dogMonths >= 7);( dogMonths <= 12);{
+    console.log("4% of their body weight");
 }
 
 /************************************************************** Task 4 **************************************************************/
@@ -83,45 +83,59 @@ else if(dogAge < 1 && dogMonths >= 7; dogMonths <= 12){
 // it should return you won or you lost based on the rules of the game (you may need to look up the rules if you have not played before)
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
- function playComp(){
-     let choose =["rock", "paper", "scissors"];
-     return choose[Math.random() * choose.length];
- }
- function playRound(playerSelect, compSelect) {
-    const capitalize = word => { return word.charAt(0).toUpperCase() + word.slice(1); }
-    const winStatement = (winner, loser) => { return `You Win! ${capitalize(winner)} beats ${capitalize(loser)}`; }
-    const loseStatement = (winner, loser) => { return `You Lose! ${capitalize(winner)} beats ${capitalize(loser)}`; }
-    const winnerChoose = {'rock': 'paper', 'paper': 'scissors', 'scissors': 'rock'};
-    
-    playerSelect = playerSelection.toLowerCase();
-    
-    if(playerSelection === compSelect) return "Oh! It's a tie";
-    else if(playerSelect === winningChoice[compSelect]) return winStatement(playerSelect, compSelect);
-    else return loseStatement(compSelect, playerSelect);
-}
-
-const playerSelect = 'rock';
-const compSelect = compPlay();
-console.log(playRound(playerSelect, compSelect));
+function game(hand){
+    if(Math.cell(Math.random() * 3) === 1 && hand === "scissors"){
+      return "Yoy Tied!";
+    }
+    else if(Math.cell(Math.random() * 3) === 1 && hand === "rock"){
+      return "Yoy Won!";
+    }
+     else if(Math.cell(Math.random() * 3) === 1 && hand === "paper"){
+      return "Yoy Lost!";
+    }
+     else if(Math.cell(Math.random() * 3) ===  2 && hand === "scissors"){
+      return "Yoy Lost!";
+    }
+     else if(Math.cell(Math.random() * 3) === 2 && hand === "rock"){
+      return "Yoy Tied!";
+    }
+     else if(Math.cell(Math.random() * 3) === 2 && hand === "paper"){
+      return "Yoy Won!";
+    }
+     else if(Math.cell(Math.random() * 3) === 3 && hand === "rock"){
+      return "Yoy Lost!";
+    }
+     else if(Math.cell(Math.random() * 3) === 3 && hand === "paper"){
+      return "Yoy Tied!";
+    }
+     else if(Math.cell(Math.random() * 3) === 3 && hand === "scissors"){
+      return "Yoy Won!";
+    }
+  }
+  
+  for(i=0; i<20; i++){
+    console.log(game(rock));
+  }
 
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
-
-function multiply(a,0.62137119){
-    return a * 0.62137119;
+let kilotoMile = 0.62137119;
+function multiply(a,kilotoMile){
+    return a * kilotoMile;
 }
-console.log(multiply(2,0.62137119));
+console.log(multiply(2,kilotoMile));
 
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
-function multiply(a,30.48){
-    return a * 30.48;
+let feettoCm = 30.48;
+function multiply(a,feettoCm){
+    return a * feettoCm;
 }
-console.log(multiply(2,30.48));
+console.log(multiply(2,feettoCm));
 
 
 
@@ -147,21 +161,23 @@ function annoyingSong(){
 //60s should be D 
 //and anything below 60 should be F
   
-var a = promt("Enter you marks:");
-if(a>=90)
+var a = ("");
+if(a>=90){
 console.log("A");
+}
 else if (a<90 && a>=80){
     console.log("B");
+}
     else if(a<80 && a>=70){
-        console.log("C")
+        console.log("C");
     }
     else if(a<70 && a>=60){
         console.log("D");
     }
-    else(a<60){
+    else{
         console.log("F");
     }
-}
+
   
   
 
@@ -170,7 +186,7 @@ else if (a<90 && a>=80){
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 const vowels =["a", "e", "I", "o", "U"];
-for let(vowels.length);
+console.log(vowels.length);
 
 
 
